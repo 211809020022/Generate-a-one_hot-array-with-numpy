@@ -1,0 +1,9 @@
+import numpy
+test_labels=[1,2,3,4,5,6,7]
+print(test_labels)
+adata=numpy.array(test_labels)
+print(adata)
+def make_one_hot(data1):
+    return (numpy.arange(10)==data1[:,None]).astype(numpy.integer)
+my_one_hot =make_one_hot(adata)
+print(my_one_hot)
